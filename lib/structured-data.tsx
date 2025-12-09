@@ -1,0 +1,135 @@
+export function PersonSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Muhammed Jasim M C',
+    jobTitle: 'TypeScript MERN Stack Developer | Full Stack Developer',
+    description:
+      'TypeScript-focused Full Stack Developer specializing in MERN stack, React, Node.js, and scalable cloud deployments. Currently working as Software Developer at SolutionsChamps Technologies, Coimbatore.',
+    url: 'https://mjasimmc.github.io/personal-website',
+    image: 'https://mjasimmc.github.io/personal-website/og-image.png',
+    sameAs: [
+      'https://github.com/mjasimmc',
+      'https://linkedin.com/in/mjasimmc',
+    ],
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Coimbatore',
+      addressRegion: 'Tamil Nadu',
+      addressCountry: 'IN',
+    },
+    alumniOf: {
+      '@type': 'Organization',
+      name: 'Brototype',
+    },
+    worksFor: {
+      '@type': 'Organization',
+      name: 'SolutionsChamps Technologies',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Coimbatore',
+        addressRegion: 'Tamil Nadu',
+        addressCountry: 'IN',
+      },
+    },
+    knowsAbout: [
+      'TypeScript',
+      'React',
+      'Next.js',
+      'Node.js',
+      'Express.js',
+      'MongoDB',
+      'PostgreSQL',
+      'MERN Stack',
+      'Full Stack Development',
+      'Cloud Deployment',
+      'DevOps',
+      'Nginx',
+      'AWS',
+      'DigitalOcean',
+    ],
+    email: 'mjasimmc@gmail.com',
+    telephone: '+91-9778218906',
+  }
+}
+
+export function WebSiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Muhammed Jasim M C - Portfolio',
+    url: 'https://mjasimmc.github.io/personal-website',
+    description:
+      'Portfolio website of Muhammed Jasim M C, a TypeScript-focused Full Stack Developer specializing in MERN stack development.',
+    author: {
+      '@type': 'Person',
+      name: 'Muhammed Jasim M C',
+    },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://mjasimmc.github.io/personal-website?q={search_term_string}',
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  }
+}
+
+export function OrganizationSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'SolutionsChamps Technologies',
+    url: 'https://solutionschamps.com',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Coimbatore',
+      addressRegion: 'Tamil Nadu',
+      addressCountry: 'IN',
+    },
+  }
+}
+
+export function ProjectSchema(project: {
+  name: string
+  description: string
+  tech: string[]
+  year?: string
+  url?: string
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: project.name,
+    description: project.description,
+    applicationCategory: 'WebApplication',
+    operatingSystem: 'Web',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    creator: {
+      '@type': 'Person',
+      name: 'Muhammed Jasim M C',
+    },
+    datePublished: project.year || '2024',
+    programmingLanguage: project.tech,
+    url: project.url || 'https://mjasimmc.github.io/personal-website/projects',
+  }
+}
+
+export function BreadcrumbSchema(items: { name: string; url: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  }
+}
+
