@@ -5,6 +5,7 @@ import { Providers } from './providers'
 import { ClientLayout } from '@/components/layout/ClientLayout'
 import { StructuredData } from '@/components/SEO/StructuredData'
 import { generateMetadata as genMeta } from '@/lib/seo'
+import { LocalBusinessSchema } from '@/lib/structured-data'
 
 export const metadata: Metadata = genMeta({
   title: 'Muhammed Jasim M C — TypeScript MERN Stack Developer | Full Stack Developer Portfolio',
@@ -29,8 +30,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://github.com" />
         <link rel="dns-prefetch" href="https://linkedin.com" />
-  <meta httpEquiv="Content-Language" content="en" />
-  <link rel="alternate" hrefLang="en" href="https://jasim-sct.vercel.app/" />
+        <meta httpEquiv="Content-Language" content="en" />
+        <link rel="alternate" hrefLang="en" href="https://jasim-sct.vercel.app/" />
+        <link rel="icon" href="/favicon.svg" />
+        {/* Google Analytics placeholder - set NEXT_PUBLIC_GA_ID in env to enable */}
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+          />
+        )}
       </head>
       <body className="min-h-screen bg-black dark:bg-black bg-white text-white dark:text-white text-gray-900 antialiased">
         <StructuredData type="website" />
@@ -47,6 +56,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             { name: 'Contact', url: 'https://jasim-sct.vercel.app/contact' },
           ]}
         />
+        <StructuredData type="organization" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(LocalBusinessSchema()) }} />
         <Providers>
           <ClientLayout>{children}</ClientLayout>
         </Providers>

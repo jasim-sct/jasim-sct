@@ -42,8 +42,13 @@ export function generateMetadata({
   path?: string
   type?: 'website' | 'profile' | 'article'
 }): Metadata {
-  const pageTitle = title ? `${title} | ${siteConfig.name}` : siteConfig.title
-  const pageDescription = description || siteConfig.description
+  // Helper to truncate text to recommended lengths
+  const truncate = (s: string, n: number) => (s.length > n ? s.slice(0, n - 1).trim() + '…' : s)
+
+  // Keep title ~60 characters and description ~155 characters
+  const rawTitle = title ? `${title} | ${siteConfig.name}` : siteConfig.title
+  const pageTitle = truncate(rawTitle, 60)
+  const pageDescription = truncate(description || siteConfig.description, 155)
   const pageKeywords = [...siteConfig.keywords, ...keywords].join(', ')
 
   // Normalize path and build absolute page URL
@@ -61,6 +66,10 @@ export function generateMetadata({
     alternates: {
       canonical: pageUrl,
     },
+    icons: {
+      icon: '/favicon.svg',
+      apple: '/favicon.svg',
+    },
     openGraph: {
       type,
       url: pageUrl,
@@ -71,6 +80,18 @@ export function generateMetadata({
       images: [
         {
           url: siteConfig.ogImage,
+          width: 1200,
+          height: 630,
+          alt: pageTitle,
+        },
+        {
+          url: `${siteConfig.url}/og-image-1200x1200.png`,
+          width: 1200,
+          height: 1200,
+          alt: pageTitle,
+        },
+        {
+          url: `${siteConfig.url}/og-image.webp`,
           width: 1200,
           height: 630,
           alt: pageTitle,

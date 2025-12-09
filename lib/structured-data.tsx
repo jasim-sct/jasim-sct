@@ -142,3 +142,23 @@ export function BreadcrumbSchema(items: { name: string; url: string }[]) {
   }
 }
 
+export function LocalBusinessSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'Muhammed Jasim M C',
+    url: 'https://jasim-sct.vercel.app',
+    telephone: '+91-9778218906',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '',
+      addressLocality: 'Coimbatore',
+      addressRegion: 'Tamil Nadu',
+      postalCode: '',
+      addressCountry: 'IN',
+    },
+    openingHours: 'Mo-Fr 09:00-18:00',
+    sameAs: ['https://github.com/mjasimmc', 'https://linkedin.com/in/mjasimmc'],
+  }
+}
+
