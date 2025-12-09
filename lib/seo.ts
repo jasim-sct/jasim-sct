@@ -5,7 +5,7 @@ const siteConfig = {
   title: 'Muhammed Jasim M C — TypeScript MERN Stack Developer | Full Stack Developer Portfolio',
   description: 'Portfolio of Muhammed Jasim M C, a TypeScript-focused Full Stack Developer specializing in MERN stack, React, Node.js, and scalable cloud deployments. Software Developer at SolutionsChamps Technologies, Coimbatore, India.',
   url: 'https://jasim-sct.vercel.app',
-  ogImage: '/og-image.png',
+  ogImage: 'https://jasim-sct.vercel.app/og-image.png',
   keywords: [
     'TypeScript Developer',
     'MERN Developer',
@@ -42,12 +42,13 @@ export function generateMetadata({
   path?: string
   type?: 'website' | 'profile' | 'article'
 }): Metadata {
-  const pageTitle = title
-    ? `${title} | ${siteConfig.name}`
-    : siteConfig.title
+  const pageTitle = title ? `${title} | ${siteConfig.name}` : siteConfig.title
   const pageDescription = description || siteConfig.description
   const pageKeywords = [...siteConfig.keywords, ...keywords].join(', ')
-  const pageUrl = `${siteConfig.url}${path}`
+
+  // Normalize path and build absolute page URL
+  const normalizedPath = path ? (path.startsWith('/') ? path : `/${path}`) : '/'
+  const pageUrl = new URL(normalizedPath, siteConfig.url).toString()
 
   return {
     title: pageTitle,

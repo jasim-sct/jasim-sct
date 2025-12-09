@@ -82,6 +82,15 @@ export function OrganizationSchema() {
     '@type': 'Organization',
     name: 'SolutionsChamps Technologies',
   url: 'https://solutionschamps.com',
+    logo: 'https://jasim-sct.vercel.app/og-image.png',
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        telephone: '+91-9778218906',
+        contactType: 'customer support',
+        areaServed: 'IN',
+      },
+    ],
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Coimbatore',

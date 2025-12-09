@@ -29,6 +29,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://github.com" />
         <link rel="dns-prefetch" href="https://linkedin.com" />
+  <meta httpEquiv="Content-Language" content="en" />
+  <link rel="alternate" hrefLang="en" href="https://jasim-sct.vercel.app/" />
       </head>
       <body className="min-h-screen bg-black dark:bg-black bg-white text-white dark:text-white text-gray-900 antialiased">
         <StructuredData type="website" />
