@@ -8,23 +8,23 @@ import { Card } from '@/components/ui/Card'
 const highlights = [
   {
     icon: Code2,
-    title: 'Type-Safe Development',
-    description: 'Building with TypeScript for reliability and maintainability',
+    title: '3+ Years Full Stack',
+    description: 'MERN + TypeScript across Brototype → AF Technologies → SCT',
   },
   {
     icon: Zap,
-    title: 'Performance Focused',
-    description: 'Creating fast, scalable applications that users love',
+    title: 'Production-Ready Delivery',
+    description: 'E-commerce, billing, school management, and cloud deployments',
   },
   {
     icon: Shield,
-    title: 'Reliable & Scalable',
-    description: 'Enterprise-grade solutions built to last',
+    title: 'Clean Architecture',
+    description: 'Type-safe APIs, modular design, Nginx/DevOps, performance first',
   },
   {
     icon: Heart,
-    title: 'Passion-Driven',
-    description: 'Coding is more than a job—it\'s a craft I\'m passionate about',
+    title: 'Passion & Growth',
+    description: 'Continuous learning—React Native, Electron, Tauri explorations',
   },
 ]
 
@@ -44,7 +44,7 @@ export function HomeHighlights() {
               What I Bring
             </h2>
             <p className="text-gray-400 dark:text-gray-400 text-gray-600 max-w-2xl mx-auto">
-              A focus on type-safety, performance, and meaningful user experiences
+              A focus on type-safety, performance, and meaningful user experiences across 3+ years of full stack delivery
             </p>
           </motion.div>
 

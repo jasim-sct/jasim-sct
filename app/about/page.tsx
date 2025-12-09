@@ -31,15 +31,15 @@ export default function AboutPage() {
 
             <motion.div variants={fadeInUp} className="mb-16">
               <div className="prose prose-invert max-w-none space-y-6 text-gray-300 dark:text-gray-300 text-gray-700 leading-relaxed">
-                <p className="text-lg">
-                  I&apos;m a <strong>MERN Stack Developer</strong> with 1.5 years of intensive training and 1 year of industry experience building production-ready applications. Currently working as a <strong>Software Developer at SolutionsChamps Technologies</strong>, specializing in <strong>TypeScript-based MERN stack architectures</strong>.
-                </p>
-                <p>
-                  I previously worked at <strong>AF Technologies</strong>, where I built ERP systems, e-commerce solutions, and cloud-deployed applications. Before that, I completed a 1-year internship at <strong>Brototype</strong> where I strengthened my fundamentals, backend development with <strong>Node.js + templating engines</strong>, and later moved to <strong>React</strong> for large-scale frontend systems.
-                </p>
-                <p>
-                  I care deeply about <strong>type-safety</strong>, <strong>clean architecture</strong>, <strong>scalable APIs</strong>, <strong>cloud deployment</strong>, and building meaningful products. Every project I work on is approached with attention to performance, reliability, and user experience.
-                </p>
+              <p className="text-lg">
+                I&apos;m a <strong>MERN Stack Developer</strong> with <strong>3+ years</strong> of experience—growing from Brototype to AF Technologies to <strong>Software Developer at SolutionsChamps Technologies</strong>—specializing in <strong>TypeScript-first</strong> architectures.
+              </p>
+              <p>
+                At <strong>AF Technologies</strong> (Lead Full Stack Developer), I shipped Next.js e-commerce, rebuilt client apps, deployed on cloud with Nginx, and learned to connect tech with business goals. Before that, Brototype forged my backend foundation (Node.js, Express, HBS/EJS) and React for large-scale frontends.
+              </p>
+              <p>
+                Today at <strong>SCT</strong> (March 2025–Present), I focus on <strong>MERN + Next.js + NestJS</strong>, clean architecture, scalable APIs, and production-grade deployments. I care deeply about <strong>type-safety</strong>, <strong>performance</strong>, <strong>cloud reliability</strong>, and building meaningful products.
+              </p>
               </div>
             </motion.div>
 

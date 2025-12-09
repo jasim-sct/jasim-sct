@@ -34,6 +34,17 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <StructuredData type="website" />
         <StructuredData type="person" />
         <StructuredData type="organization" />
+        {/* Basic breadcrumb list for main sections to help search engines */}
+        <StructuredData
+          type="breadcrumb"
+          breadcrumbItems={[
+            { name: 'Home', url: 'https://jasim-sct.vercel.app' },
+            { name: 'About', url: 'https://jasim-sct.vercel.app/about' },
+            { name: 'Skills', url: 'https://jasim-sct.vercel.app/skills' },
+            { name: 'Projects', url: 'https://jasim-sct.vercel.app/projects' },
+            { name: 'Contact', url: 'https://jasim-sct.vercel.app/contact' },
+          ]}
+        />
         <Providers>
           <ClientLayout>{children}</ClientLayout>
         </Providers>

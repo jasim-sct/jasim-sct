@@ -179,7 +179,7 @@ export default function SkillsPage() {
             </h1>
             <div className="w-24 h-0.5 bg-white dark:bg-white bg-gray-900 mx-auto mb-6" />
             <p className="text-gray-400 dark:text-gray-400 text-gray-600 max-w-2xl mx-auto">
-              A comprehensive toolkit for building modern, scalable MERN stack applications. Specializing in TypeScript, React, Node.js, Express, MongoDB, PostgreSQL, and cloud deployment.
+              3+ years building production-grade MERN/TypeScript systems: React, Next.js, Node.js, Express, MongoDB, PostgreSQL, plus Nginx, AWS, and DigitalOcean deployments.
             </p>
           </motion.div>
 

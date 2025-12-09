@@ -7,7 +7,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = generateMetadata({
   title: 'Home — TypeScript MERN Stack Developer Portfolio',
   description:
-    'Portfolio of Muhammed Jasim M C, a TypeScript-focused Full Stack Developer specializing in MERN stack, React, Node.js, Express, MongoDB, PostgreSQL, and cloud deployments. Currently working as Software Developer at SolutionsChamps Technologies, Coimbatore.',
+    'Portfolio of Muhammed Jasim M C, a TypeScript-focused Full Stack Developer with 3+ years across Brototype → AF Technologies → SolutionsChamps. Specializing in MERN stack, React, Next.js, Node.js, Express, MongoDB, PostgreSQL, and cloud deployments.',
   keywords: [
     'TypeScript Developer',
     'MERN Stack Developer',

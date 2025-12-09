@@ -4,7 +4,7 @@ const siteConfig = {
   name: 'Muhammed Jasim M C',
   title: 'Muhammed Jasim M C — TypeScript MERN Stack Developer | Full Stack Developer Portfolio',
   description: 'Portfolio of Muhammed Jasim M C, a TypeScript-focused Full Stack Developer specializing in MERN stack, React, Node.js, and scalable cloud deployments. Software Developer at SolutionsChamps Technologies, Coimbatore, India.',
-  url: 'https://mjasimmc.github.io/personal-website',
+  url: 'https://jasim-sct.vercel.app',
   ogImage: '/og-image.png',
   keywords: [
     'TypeScript Developer',

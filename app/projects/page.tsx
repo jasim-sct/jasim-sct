@@ -82,7 +82,7 @@ export default function ProjectsPage() {
               </h1>
               <div className="w-24 h-0.5 bg-white dark:bg-white bg-gray-900 mx-auto mb-6" />
               <p className="text-gray-400 dark:text-gray-400 text-gray-600 max-w-2xl mx-auto">
-                Production-ready MERN stack applications built with TypeScript, React, Node.js, Express, MongoDB, and cloud deployment expertise. Each project demonstrates real-world problem-solving and scalable architecture.
+                3+ years of production-ready MERN/TypeScript applications: school automation, billing, and learning platforms. Real-world problem-solving, scalable architecture, and cloud deployments with Nginx, AWS, and DigitalOcean.
               </p>
             </motion.div>
 
@@ -90,7 +90,7 @@ export default function ProjectsPage() {
             <motion.div variants={fadeInUp} className="mb-8 p-4 bg-gray-900 dark:bg-gray-900 bg-gray-50 border border-gray-800 dark:border-gray-800 border-gray-200 rounded-lg">
               <p className="text-sm text-gray-400 dark:text-gray-400 text-gray-600">
                 Built using my <Link href="/skills" className="text-primary dark:text-primary hover:underline">technical skills</Link> during my 
-                {' '}<Link href="/experience" className="text-primary dark:text-primary hover:underline">professional experience</Link> as a Full Stack Developer.
+                {' '}<Link href="/experience" className="text-primary dark:text-primary hover:underline">professional experience</Link> (3+ years) as a Full Stack Developer.
               </p>
             </motion.div>
 

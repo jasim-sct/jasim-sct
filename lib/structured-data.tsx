@@ -6,8 +6,8 @@ export function PersonSchema() {
     jobTitle: 'TypeScript MERN Stack Developer | Full Stack Developer',
     description:
       'TypeScript-focused Full Stack Developer specializing in MERN stack, React, Node.js, and scalable cloud deployments. Currently working as Software Developer at SolutionsChamps Technologies, Coimbatore.',
-    url: 'https://mjasimmc.github.io/personal-website',
-    image: 'https://mjasimmc.github.io/personal-website/og-image.png',
+    url: 'https://jasim-sct.vercel.app',
+  image: 'https://jasim-sct.vercel.app/og-image.png',
     sameAs: [
       'https://github.com/mjasimmc',
       'https://linkedin.com/in/mjasimmc',
@@ -58,7 +58,7 @@ export function WebSiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Muhammed Jasim M C - Portfolio',
-    url: 'https://mjasimmc.github.io/personal-website',
+  url: 'https://jasim-sct.vercel.app',
     description:
       'Portfolio website of Muhammed Jasim M C, a TypeScript-focused Full Stack Developer specializing in MERN stack development.',
     author: {
@@ -69,7 +69,7 @@ export function WebSiteSchema() {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: 'https://mjasimmc.github.io/personal-website?q={search_term_string}',
+        urlTemplate: 'https://jasim-sct.vercel.app?q={search_term_string}',
       },
       'query-input': 'required name=search_term_string',
     },
@@ -81,7 +81,7 @@ export function OrganizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'SolutionsChamps Technologies',
-    url: 'https://solutionschamps.com',
+  url: 'https://solutionschamps.com',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Coimbatore',
@@ -116,7 +116,7 @@ export function ProjectSchema(project: {
     },
     datePublished: project.year || '2024',
     programmingLanguage: project.tech,
-    url: project.url || 'https://mjasimmc.github.io/personal-website/projects',
+    url: project.url || 'https://jasim-sct.vercel.app/projects',
   }
 }
 

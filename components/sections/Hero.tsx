@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { HeroScene } from '@/components/three/HeroScene'
+import { HeroLoader } from '@/components/three/HeroLoader'
 import { Button } from '@/components/ui/Button'
 import { fadeInUp, staggerContainer } from '@/lib/framerVariants'
 import Link from 'next/link'
@@ -31,7 +31,7 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Three.js Background - Lazy loaded for performance */}
       <div className="absolute inset-0 -z-10">
-        <HeroScene />
+        <HeroLoader />
       </div>
 
       <motion.div
@@ -46,7 +46,7 @@ export function Hero() {
           transition={{ delay: 0.2 }}
           className="text-xs uppercase tracking-[0.3em] text-gray-400 dark:text-gray-400 text-gray-600 mb-6"
         >
-          TypeScript-Focused Full Stack Developer
+          TypeScript-Focused Full Stack Developer — 3+ Years Experience
         </motion.p>
 
         <motion.h1
@@ -65,7 +65,7 @@ export function Hero() {
           transition={{ delay: 0.4 }}
           className="text-lg md:text-xl text-gray-400 dark:text-gray-400 text-gray-600 mb-6 max-w-3xl mx-auto leading-relaxed"
         >
-          TypeScript-Focused Full Stack Developer building fast, scalable, and meaningful digital experiences.
+          TypeScript-Focused Full Stack Developer building fast, scalable, and meaningful digital experiences. Currently at SolutionsChamps Technologies, shipping production-grade MERN + Next.js systems.
         </motion.p>
 
         <motion.p
@@ -74,7 +74,7 @@ export function Hero() {
           transition={{ delay: 0.5 }}
           className="text-base text-gray-500 dark:text-gray-500 text-gray-600 mb-12 max-w-2xl mx-auto"
         >
-          Specializing in MERN + TypeScript stack with cloud deployment expertise. Passionate about building meaningful products with clean architecture, type-safety, and scalable solutions.
+          3+ years across Brototype → AF Technologies → SolutionsChamps. Deep in MERN + TypeScript, clean architecture, scalable APIs, and cloud deployment with Nginx, AWS, and DigitalOcean.
         </motion.p>
 
         <motion.div
